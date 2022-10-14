@@ -41,8 +41,7 @@ async def howgay(ctx, member: discord.Member):
         rate = "Thẳng rồi"
     elif gay_rat >= 50:
         rate = "Khổ thân thằng bé:_("
-    gay_rat = str(gay_rat)
-    gay_rat_new = "mày " + gay_rat + "% gay."
+    gay_rat_new = "mày " + str(gay_rat) + "% gay."
 #    member = get(ctx.guild.member, name = member)
     embed = discord.Embed(title = "GayRater", description = gay_rat_new, colour = discord.Colour.purple())
     embed.set_footer(text = f"{member.mention} {rate}")
